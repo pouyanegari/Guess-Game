@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/guessGameStyle.css" />
+    <script src="js/guessGameApp.js" defer></script>
+    <title>guess play</title>
+  </head>
+  <body class="text-center">
+    <div class="text-center title">
+      <div class="container">
+        <h1 class="text-primary mt-3">Guess Number Game</h1>
+        <h5 class="mt-3">
+          we have choosed a random number between 0 to 100 , you have 10 shots
+          to guess our number , take your time
+        </h5>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <div class="container">
+        <label for="clientGuess" class="text-center d-block"
+          >Enter Your Guess Babe : ( GoodLuck :P )</label
+        >
+        <input
+          type="text"
+          name="guess"
+          id="clientGuess"
+          class="form-control mt-3"
+        />
+        <button class="btn btn-primary text-center mt-3" id="submit">
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="answers">
+      <div class="container text-center" id="replace">
+        <p class="clientPervGuesses mt-5"></p>
+        <p class="clientShots mt-3"></p>
+        <p class="rightOrWrong mt-5 pt-2 pb-2"></p>
+        <p class="highOrLow mt-3"></p>
+      </div>
+    </div>
+  </body>
+</html>
